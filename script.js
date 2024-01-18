@@ -1,6 +1,3 @@
-const profileform = document.querySelector('#formprofile');
-const countryinput = document.getElementById("InputCountry");
-
 const countrylist = [
     "afghanistan",
     "albania",
@@ -235,11 +232,14 @@ const countrylist = [
     "zimbabwe"
   ];
 
+const profileform = document.querySelector('#formprofile');
+const countryinput = document.getElementById("InputCountry");
+
 const base_url = 'https://covid-193.p.rapidapi.com/statistics?country=';
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '35051c8d47msh6f20781bdb30142p1102ecjsn2327f5781ece',
+		'X-RapidAPI-Key': '',
 		'X-RapidAPI-Host': 'covid-193.p.rapidapi.com'
 	}
 };
